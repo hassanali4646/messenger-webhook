@@ -6,6 +6,7 @@ app = FastAPI()
 
 VERIFY_TOKEN = "fb_verify_8f72b13d2c7d4f15960c13d6"
 PAGE_ACCESS_TOKEN = "EAAPFk9CFXT0BOZBLUWqgpQWg47EOaD3gLUe7r0NLeXcMZBpgqEqZA1gGV2XVsPvoTZAfZB7TBRZBWJpVZCiLgBOqSYqnm3yqJ7pRSHZBfiTMPOKonH1mGFlNpHEF09HZBNZBfmrETfgZBajPOa22B4YojJ9Lmuep2EbGZCH7defftaX4wZAojSk2i5WQ22zIqm4oNghUssZBXmzP8sf6fU1prGImPLicuXLwZDZD"
+print(f"✅ Webhook starting with VERIFY_TOKEN = {VERIFY_TOKEN}")
 
 @app.get("/webhook")
 async def verify_webhook(request: Request):
